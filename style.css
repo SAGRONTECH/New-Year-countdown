@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background: url("https://images.unsplash.com/photo-1514876246314-d9a231ea21db?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    overflow: hidden;
+        
+    }
+@media (max-width: 600px){
+     body {
+        font-size: O;
+     } 
+    }
+h1{
+    
+    color: rgb(250, 141, 196);
+    font-weight: 100;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 10px;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 0;
+
+}
+
+h2{
+    color: aliceblue;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 31px;
+    text-align: center;
+}
+
+.year{
+    font-size: 3em;
+    color: rgb(25, 230, 230);
+    letter-spacing: 10px;
+}
+.countdown{
+    margin: 15px;
+    margin-left: 40px;
+    margin-right: -300px;
+    display: flex;
+    background-color: rgb(148, 33, 90);
+    opacity: 82%;
+    width: 100%; 
+    height: 120px;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    font-size: 36px;
+    gap: 0.025em;
+    overflow: hidden;
+    box-shadow: 10px 10px 50px;
+    border-radius: 115px;
+
+
+
+}
+.countdown div{
+    margin: 0 15px; 
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: -25px;
+    position: relative;
+
+}
+.countdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -10;
+    font-size: .30em;
+    line-height: 35px;
+    text-transform: uppercase;
+
+}
+.countdown #day::before{
+    content: "day";
+}
+.countdown #hour::before{
+    content: "hour";
+}
+.countdown #minutes::before{
+    content: "minutes";
+}
+.countdown #seconds::before{
+    content: "seconds";
+}
